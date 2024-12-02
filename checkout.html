@@ -1,0 +1,24 @@
+<html lang="en-US">
+    <head>
+        <title> Link Checkout </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://js.stripe.com/v3/"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="link-poc">
+        <button id ="create-intent"> Pay with Link</button>
+        <form id="payment-form">
+            <h4 style="display: none;">Contact Information</h4>
+            <div id="link-authentication-element"></div>
+            <div id="payment-element"></div>
+            <div id="submit-field" style="display: none;">
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+        </form>
+        <div id="loader" style="display: none;"></div>
+    </div>
+        <script src="client.js"></script>
+    </body>
+</html>
