@@ -1,0 +1,58 @@
+body{
+    background: linear-gradient(rgb(232, 119, 119), rgb(168, 243, 138));
+    padding: 20px;
+}
+
+.link-poc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#create-intent, #submit-btn {
+    width: 200px;
+    height: 45px;
+    border: 1px double green;
+    border-radius: 5px;
+    background: #2fd52f;
+}
+
+#payment-form {
+    width: 50%;
+}
+
+#submit-field{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* HTML: <div class="loader"></div> */
+#loader {
+    z-index: 1100;
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    aspect-ratio: 1;
+    display: grid;
+    border: 4px solid #0000;
+    border-radius: 50%;
+    border-right-color: #033830;
+    animation: l15 1s infinite linear;
+  }
+  .loader::before,
+  .loader::after {    
+    content: "";
+    grid-area: 1/1;
+    margin: 2px;
+    border: inherit;
+    border-radius: 50%;
+    animation: l15 2s infinite;
+  }
+  .loader::after {
+    margin: 8px;
+    animation-duration: 3s;
+  }
+  @keyframes l15{ 
+    100%{transform: rotate(1turn)}
+  }
